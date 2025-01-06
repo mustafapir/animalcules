@@ -303,7 +303,9 @@ observeEvent("", {
   }
 })
 
-
+output$debug<-renderText({
+  paste0(script_path(), runid(), "/animalcules_out/animalcules_out/", "reads.txt")
+})
 
 observeEvent("", {
   print(runid())
